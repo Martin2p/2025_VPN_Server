@@ -1,0 +1,28 @@
+services:
+  wireguard:
+    # Das benötigte Image ziehen
+    image: linuxserver/wireguard
+    container_name: wireguard
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Zurich
+      - SERVERURL=   [SERVER-IP]
+      - SERVERPORT=51820
+      - PEERDNS=1.1.1.1
+    volumes:
+    # better outside of the container
+      - [full/path/to]/config:/config
+      - /lib/modules:/lib/modules
+    network_mode: "host"
+    # we dont use it as a "Brigde" so we comment out or delete the following/folgend auskommentiert, da über Host aktiviert ist!
+    # ports:
+    #  - "51820:51820/udp"
+    # folgend auskommentiert, da über Host aktiviert ist!
+    # sysctls:
+    #  - net.ipv4.conf.all.src_valid_mark=1
+    #  - net.ipv4.ip_forward=1
+    restart: unless-stopped
