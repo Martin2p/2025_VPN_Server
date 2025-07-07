@@ -9,7 +9,7 @@ Setup my own VPN Server with a Germany IP address using a cloud server.
 - Deploy a private VPN gateway on a cloud server
 - Route all client traffic through the German IP
 - Enable secure connections for remote devices
-- Automate setup with scripts
+- Manual setup with clearly documented steps and configuration files
 
 ## 🛠 Tech Stack
 
@@ -18,7 +18,8 @@ Setup my own VPN Server with a Germany IP address using a cloud server.
 - **nftables** (Firewall)
 - **Routing & IP forwarding**
 - **Bash scripts**
-
+- **Docker**
+- 
 ## ✨ Features
 
 - Easy-to-deploy VPN gateway
@@ -34,4 +35,3 @@ Setup my own VPN Server with a Germany IP address using a cloud server.
 │ └── wg0.conf
 | └── docker-compose.yml
 ├── docs/
-│ 
