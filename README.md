@@ -30,9 +30,8 @@ Setup my own VPN Server with a Germany IP address using a cloud server.
 
 2025_VPN_Server/
 ├── README.md
-├── scripts/
-│ └── setup.sh
 ├── configs/
-│ └── wg0.conf.example
+│ └── wg0.conf
+| └── docker-compose.yml
 ├── docs/
 │ 
