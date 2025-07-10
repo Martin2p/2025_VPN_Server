@@ -13,7 +13,7 @@ Setup my own VPN Server with a Germany IP address using a cloud server.
 
 ## 🛠 Tech Stack
 
-- **Ubuntu 24.04**
+- **Ubuntu 22.04**
 - **WireGuard**
 - **nftables** (Firewall)
 - **Routing & IP forwarding**
