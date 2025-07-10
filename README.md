@@ -19,7 +19,7 @@ Setup my own VPN Server with a Germany IP address using a cloud server.
 - **Routing & IP forwarding**
 - **Bash scripts**
 - **Docker**
-- 
+
 ## ✨ Features
 
 - Easy-to-deploy VPN gateway
