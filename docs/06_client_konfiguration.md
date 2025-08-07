@@ -21,7 +21,6 @@ Einträge in der wg0.conf vornehmen (Beispiel):
 PublicKey  = 4wXUQna8RVJKgryxHs+7HronfEcmnsIJjqNCuhm4wS8=
 AllowedIPs = 10.0.1.20/32
 ```
-
 ---
 
 ### Client Konfigurationen auf dem Client (unter Linux)
@@ -35,3 +34,16 @@ sudo apt install wireguard
 ```
 
 Anschließend wird bspw. eine wg0.conf mit folgendem Inhalt angelegt:
+
+```bash
+[Interface]
+PrivateKey = [privater Key]
+Address = 10.0.1.20/24
+DNS = 1.1.1.1
+
+# Server
+PublicKey = [PublicKey]
+AllowedIPs = 0.0.0.0
+Endpoint = [Server IP Adresse]
+PersistentKeepalive = 25
+```
