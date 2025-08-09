@@ -1,3 +1,16 @@
+### Portforwarding aktivieren
+
+```bash
+sudo sysctl -w net.ipv4.ip_forward=1
+```
+Um es dauerhaft zu machen, in /etc/sysctl.conf oder /etc/sysctl.d/99-sysctl.conf hinzufügen:
+
+```bash
+net.ipv4.ip_forward=1
+```
+
+---
+
 ### Firewall & Fail2ban (nftables)
 
 Der Server wurde mit `nftables` abgesichert. Zusätzlich schützt `Fail2ban` vor Brute-Force-Angriffen auf den SSH-Dienst.
@@ -69,7 +82,6 @@ table ip nat {
 sudo systemctl enable nftables
 sudo systemctl start nftables
 ```
-
 ---
 
 ### Fail2ban – Schutz vor SSH-Brute-Force-Angriffen
