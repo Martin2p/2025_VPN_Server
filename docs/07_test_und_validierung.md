@@ -40,5 +40,3 @@ Client vom Server aus anpingen (ping [VPN-IP des Clients])
 Routing testen:
 
 Prüfen, ob der gesamte Traffic (oder gewählte IP-Bereiche) über VPN läuft (z. B. traceroute / tracert)
-
-#### 3. Sicherheitschecks
